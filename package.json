@@ -1,11 +1,11 @@
   "name": "pages",
-  "description": "Fetch Markdown files and render them as full pages.",
+  "description": "Fetch Markdown files and render them as full pages with stylin flair.",
   "keywords": ["documentation", "markdown"],
-  "author": "Rico Sta. Cruz <hi@ricostacruz.com>",
-  "version": "0.8.6",
+  "author": "Katie Ball <katie@roachhd.com>",
+  "version": "0.1.0",
   "repository": {
      "type": "git",
-     "url": "https://github.com/rstacruz/flatdoc.git"
+     "url": "https://github.com/roachhd/pages.git"
    },
   "scripts": {
     "test": "mocha"
