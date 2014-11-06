@@ -40,3 +40,23 @@ I love cupcake sugar plum muffin soufflé jujubes. Gingerbread chocolate cake sw
 Danish cake fruitcake bonbon donut. Fruitcake soufflé cheesecake. Jelly-o cheesecake I love muffin sweet roll toffee dragée jelly.
 
 Cheesecake lollipop danish I love jelly beans dessert muffin. Cotton candy gummies jelly beans. Chocolate cake tootsie roll apple pie I love dessert carrot cake I love.
+
+Super Simple Hack List
+===
+
+# To do
+- [ ] Make pretty
+- [ ] Post to my blog
+- [ ] Share on Twitter
+
+
+## Next
+- [ ] Buy my jetski
+- [ ] Have fun at the beach
+
+
+## New: Nested TODOs
+- [ ] My Website Tasks
+    - [ ] Write slick code
+    - [ ] Stylish design 
+    - [ ] Captivating content
