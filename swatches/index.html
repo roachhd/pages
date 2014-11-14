@@ -30,14 +30,21 @@
   <script src='http://roachhd.github.io/pages/js/flatdoc.js' type="text/javascript">
 </script>
 
-<!-- Flatdoc theme -->
+
+<-- base bootsrap style anf query -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+
+
+
+<!-- swatch theme
   <link href='http://roachhd.github.io/pages/swatches/cosmo/bootstrap.min.css' rel=
   'stylesheet' type="text/css">
     <link href='http://roachhd.github.io/pages/swatches/cosmo/theme.css' rel=
   'stylesheet' type="text/css">
   <script src='http://roachhd.github.com/pages/swatches/bootstrap.min.js' type=
   "text/javascript">
-
+-->
 
 </script><!-- Meta -->
   <meta content="Pages" property="og:title">
@@ -113,5 +120,32 @@
    <script type="text/javascript">
 var HN=[];HN.factory=function(e){return function(){HN.push([e].concat(Array.prototype.slice.call(arguments,0)))};},HN.on=HN.factory("on"),HN.once=HN.factory("once"),HN.off=HN.factory("off"),HN.emit=HN.factory("emit"),HN.load=function(){var e="hn-button.js";if(document.getElementById(e))return;var t=document.createElement("script");t.id=e,t.src="//hn-button.herokuapp.com/hn-button.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)},HN.load();
   </script>
+
+   <script type="text/JavaScript">
+$.get("http://api.bootswatch.com/3/", function (data) {
+  var themes = data.themes;
+  var select = $("select");
+  select.show();
+  $(".alert").toggleClass("alert-info alert-success");
+  $(".alert h4").text("Success!");
+  
+  themes.forEach(function(value, index){
+    select.append($("<option />")
+          .val(index)
+          .text(value.name));
+  });
+  
+  select.change(function(){
+    var theme = themes[$(this).val()];
+    $("link").attr("href", theme.css);
+    $("h1").text(theme.name);
+  }).change();
+
+}, "json").fail(function(){
+    $(".alert").toggleClass("alert-info alert-danger");
+    $(".alert h4").text("Failure!");
+});
+</script>
+
 </body>
 </html>
